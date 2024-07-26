@@ -1,10 +1,10 @@
-#Luhn Algorithm 1111111111111111
+#Luhn Algorithm
 
 def verify_card_number(card_number):
     card_translation = str.maketrans({"-": '', " ": ''})
     translated_card_number = card_number.translate(card_translation)
     if len(translated_card_number) != 16 or not translated_card_number.isdigit():
-        #random return value to have for other options other than True and False
+        #Random return value different from True and False
         return 'sad'
     else:
         sum_of_odd_digits = 0
