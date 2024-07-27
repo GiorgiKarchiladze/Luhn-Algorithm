@@ -1,5 +1,7 @@
 #Luhn Algorithm
 
+#Function verifying the card number utilizing the Luhn Algorithm with the additional steps
+#of checking the input card length and having all digit characters
 def verify_card_number(card_number):
     card_translation = str.maketrans({"-": '', " ": ''})
     translated_card_number = card_number.translate(card_translation)
